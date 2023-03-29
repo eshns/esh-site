@@ -1,5 +1,8 @@
 import React, {useState} from 'react'
-import {FaBars, FaTimes} from 'react-icons/fa'
+import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
+import {HiOutlineMail} from 'react-icons/hi'
+import {BsFillPersonLinesFill} from 'react-icons/bs'
+import Link from 'next/link'
 
 export const Navbar = () => {
     
@@ -39,7 +42,25 @@ export const Navbar = () => {
         </ul>
 
         {/* Social Icons */}
-        <div className='hidden'></div>
+        <div className='lg:flex fixed flex-col top-[35%] left-0'>
+            <ul>
+                <li className='w-[160px] h-[60px] flex justify-between items-center'>
+                    <Link href="https://www.linkedin.com/in/emmanuel-santiago/" target="_blank">
+                        <FaLinkedin size={30} color={'white'}/>
+                    </Link>
+                </li>
+                <li className='w-[160px] h-[60px] flex justify-between items-center'>
+                    <Link href="https://github.com/eshns" target="_blank">
+                        <FaGithub size={30} color={'white'}/>
+                    </Link>
+                </li>
+                <li className='w-[160px] h-[60px] flex justify-between items-center'>
+                    <Link href="/" target="_blank">
+                        <HiOutlineMail size={30} color={'white'}/>
+                    </Link>
+                </li>
+            </ul>
+        </div>
     </div>
   )
 }
