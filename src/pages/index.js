@@ -3,6 +3,7 @@ import { Hero } from '@/components/Hero'
 import Head from 'next/head'
 import { About } from '@/components/About'
 import { Skills } from '@/components/Skills'
+import { Work } from '@/components/Work'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero />
         <About />
         <Skills />
+        <Work />
       </main>
     </>
   )
