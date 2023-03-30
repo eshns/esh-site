@@ -2,6 +2,7 @@ import { Navbar } from '@/components/Navbar'
 import { Hero } from '@/components/Hero'
 import Head from 'next/head'
 import { About } from '@/components/About'
+import { Skills } from '@/components/Skills'
 
 export default function Home() {
   return (
@@ -14,8 +15,9 @@ export default function Home() {
       </Head>
       <main >
         <Navbar />
-        <Hero/>
-        <About/>
+        <Hero />
+        <About />
+        <Skills />
       </main>
     </>
   )
