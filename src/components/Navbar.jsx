@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
-import {BsFillPersonLinesFill} from 'react-icons/bs'
 import Link from 'next/link'
+import {Link as InternalLink} from 'react-scroll' 
 
 export const Navbar = () => {
     
@@ -17,11 +17,31 @@ export const Navbar = () => {
         
         {/* menu */}
         <ul className='hidden md:flex'>
-            <li>Home</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Work</li>
-            <li>Contact</li>
+            <li>
+                <InternalLink to="home" smooth={true} duration={500}>
+                    Home
+                </InternalLink>
+            </li>
+            <li>
+                <InternalLink to="about" smooth={true} duration={500}>
+                    About
+                </InternalLink>
+            </li>
+            <li>
+                <InternalLink to="skills" smooth={true} duration={500}>
+                    Skills
+                </InternalLink>
+            </li>
+            <li>
+                <InternalLink to="work" smooth={true} duration={500}>
+                    Work
+                </InternalLink>
+            </li>
+            <li>
+                <InternalLink to="contact" smooth={true} duration={500}>
+                    Contact
+                </InternalLink>
+            </li>
         </ul>
   
 
@@ -34,15 +54,35 @@ export const Navbar = () => {
 
         {/* Mobile menu */}
         <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
-            <li className='py-6 text-4xl'>Home</li>
-            <li className='py-6 text-4xl'>About</li>
-            <li className='py-6 text-4xl'>Skills</li>
-            <li className='py-6 text-4xl'>Work</li>
-            <li className='py-6 text-4xl'>Contact</li>
+            <li className='py-6 text-4xl'>
+                <InternalLink onClick={handleClick} to="home" smooth={true} duration={500}>
+                    Home
+                </InternalLink>
+            </li>
+            <li className='py-6 text-4xl'>
+                <InternalLink onClick={handleClick} to="about" smooth={true} duration={500}>
+                    About
+                </InternalLink>
+            </li>
+            <li className='py-6 text-4xl'>
+                <InternalLink onClick={handleClick} to="skills" smooth={true} duration={500}>
+                    Skills
+                </InternalLink>
+            </li>
+            <li className='py-6 text-4xl'>
+                <InternalLink onClick={handleClick} to="work" smooth={true} duration={500}>
+                    Work
+                </InternalLink>
+            </li>
+            <li className='py-6 text-4xl'>
+                <InternalLink onClick={handleClick} to="contact" smooth={true} duration={500}>
+                    Contact
+                </InternalLink>
+            </li>
         </ul>
 
         {/* Social Icons */}
-        <div className='lg:flex fixed flex-col top-[35%] left-0'>
+        <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
             <ul>
                 <li className='w-[160px] h-[60px] flex justify-between items-center'>
                     <Link href="https://www.linkedin.com/in/emmanuel-santiago/" target="_blank">
