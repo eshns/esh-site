@@ -1,9 +1,10 @@
+import Head from 'next/head'
 import { Navbar } from '@/components/Navbar'
 import { Hero } from '@/components/Hero'
-import Head from 'next/head'
 import { About } from '@/components/About'
 import { Skills } from '@/components/Skills'
 import { Work } from '@/components/Work'
+import { Contact } from '@/components/Contact'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <About />
         <Skills />
         <Work />
+        <Contact />
       </main>
     </>
   )
