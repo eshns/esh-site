@@ -12,9 +12,11 @@ export const Navbar = () => {
   const handleClick = () => setNav(!nav)
 
   return (
-    <div className='fixed w-full h-[100px] flex justify-between items-center px-56 bg-[#0a192f] text-gray-300'>
-        <div>
-            <Image src={Logo} alt='Logo Image' style={{ width: '150px', height:'150px' }} />
+    <div className='fixed w-full h-[100px] flex justify-between items-center px-20 bg-[#0a192f] text-gray-300'>
+        <div className='cursor-pointer'>
+            <InternalLink to="home" smooth={true} duration={500}>
+                <Image src={Logo} alt='Logo Image' style={{ width: '150px', height:'150px' }} />
+            </InternalLink>
         </div>
         
         {/* menu */}
@@ -84,7 +86,7 @@ export const Navbar = () => {
         </ul>
 
         {/* Social Icons */}
-        <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+        <div className='hidden lg:flex fixed flex-col top-[35%] left-0 px-3'>
             <ul>
                 <li className='w-[160px] h-[60px] flex justify-between items-center'>
                     <Link href="https://www.linkedin.com/in/emmanuel-santiago/" target="_blank">
@@ -97,9 +99,9 @@ export const Navbar = () => {
                     </Link>
                 </li>
                 <li className='w-[160px] h-[60px] flex justify-between items-center'>
-                    <Link href="/" target="_blank">
+                    <InternalLink to="contact" smooth={true} duration={500}>
                         <HiOutlineMail size={30} color={'white'}/>
-                    </Link>
+                    </InternalLink>
                 </li>
             </ul>
         </div>

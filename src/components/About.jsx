@@ -16,16 +16,21 @@ export const About = () => {
         </div>
 
         <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-            <div className='sm:text-right text-4xl font-bold'>
-              <p>Hi. I&apos;m Emmanuel Hernandez, nice to meet you. Please take a look around.</p>
+            <div className='sm:text-right text-4xl text-[#ccd6f6] font-bold'>
+              <p>Career development as a software engineer</p>
             </div>
 
-            <div>
-              <p>I am passionate about building excellent software that improves
-              the lives of those around me. I specialize in creating software
-              for clients ranging from individuals and small-businesses all the
-              way to large enterprise corporations. What would you do if you had
-              a software expert available at your fingertips?</p>  
+            <div className='text-[#8892b0]'>
+              <p>
+                I specialize in building mobile responsive front-end UI applications that connect with APIs and other backend technologies. 
+                I&apos;m passionate about learning new technologies and understand that there is more than one way to accomplish a task. 
+                Although I am most proficient in building front-end applications using HTML, CSS, JavaScript, and React, I am a quick learner 
+                and can pick up new tech stacks as needed. I believe that being a great developer does not mean using one specific language, 
+                but choosing the best tool for the job.
+              </p>
+              <p className='py-3'>
+                I started web developement in 2017, developing multiple APIs using JavaScript and its runtime environment in NodeJS. 
+              </p>  
             </div>
         </div>
       </div>
