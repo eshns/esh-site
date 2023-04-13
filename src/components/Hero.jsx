@@ -8,7 +8,7 @@ export const Hero = () => {
       <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
 
         <h1 className='text-4xl py-2 sm:text-7xl font-bold text-[#ccd6f6] group transition-all duration-300 ease-in-out'>
-          Hi, I am <span className='text-[#F6683C] cursor-pointer  bg-left-bottom bg-gradient-to-r from-[#F6683C] to-[#F6683C] bg-[length:0%_5px] bg-no-repeat group-hover:bg-[length:100%_5px] transition-all duration-500 ease-in-out'>Emmanuel</span> 
+          Hi, I am <span className='text-[#F6683C] cursor-pointer  bg-left-bottom bg-gradient-to-r from-[#F6683C] to-[#F6683C] bg-[length:0%_5px] bg-no-repeat group-hover:bg-[length:100%_5px] transition-all duration-300 ease-in-out'>Emmanuel</span> 
         </h1>
         <h2 className='text-4xl py-2 sm:text-7xl font-bold text-[#ccd6f6]'>Full Stack Web Developer</h2>
         <p className='text-lg text-[#8892b0] py-2 max-w-[700px]'>I&apos;m focused on building responsive front-end web applications integrating back-end technologies.</p>

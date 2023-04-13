@@ -21,27 +21,27 @@ export const Navbar = () => {
         
         {/* menu */}
         <ul className='hidden md:flex'>
-            <li>
+            <li className='hover:underline hover:duration-500'>
                 <InternalLink to="home" smooth={true} duration={500}>
                     Home
                 </InternalLink>
             </li>
-            <li>
+            <li className='hover:underline hover:duration-500'>
                 <InternalLink to="about" smooth={true} duration={500}>
                     About
                 </InternalLink>
             </li>
-            <li>
+            <li className='hover:underline hover:duration-500'>
                 <InternalLink to="skills" smooth={true} duration={500}>
                     Skills
                 </InternalLink>
             </li>
-            <li>
+            <li className='hover:underline hover:duration-500'>
                 <InternalLink to="work" smooth={true} duration={500}>
                     Work
                 </InternalLink>
             </li>
-            <li>
+            <li className='hover:underline hover:duration-500'>
                 <InternalLink to="contact" smooth={true} duration={500}>
                     Contact
                 </InternalLink>
