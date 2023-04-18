@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import { Navbar } from '@/components/Navbar';
-import { About } from '@/components/About';
+import { Skills } from '@/components/Skills';
 import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
 
-export default function AboutPage() {
+export default function SkillsPage() {
   return (
     <>
       <Head>
@@ -15,7 +15,7 @@ export default function AboutPage() {
       </Head>
       <main>
         <Navbar />
-        <About />
+        <Skills />
         <Contact />
         <Footer />
       </main>
