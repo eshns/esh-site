@@ -11,7 +11,15 @@ export const Contact = () => {
             <input className='p-2 bg-[#ccd6f6]' type="text" placeholder='Name' name='name' />
             <input className='my-4 p-2 bg-[#ccd6f6]' type="email" placeholder='Email' name='email' />
             <textarea className='p-2 bg-[#ccd6f6]' name="message" id="message" cols="30" rows="10" placeholder='Message'></textarea>
-            <button className='text-white border-2 hover:bg-[#F6683C] hover:border-[#F6683C] px-4 py-3 my-8 mx-auto flex items-center'>Send Message</button>
+
+            <div className='py-10'>
+              <button className='group relative text-white hover:border-[#F6683C] border-2 px-6 py-3 mx-auto my-2 flex items-center'>
+                <div className="absolute inset-0 w-0 bg-[#F6683C] transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+                <span className="relative group-hover:text-white">
+                  Send Message
+                </span>
+              </button>
+            </div>
         </form>
     </div>
   )
