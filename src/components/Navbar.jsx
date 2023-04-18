@@ -12,7 +12,7 @@ export const Navbar = () => {
   const handleClick = () => setNav(!nav)
 
   return (
-    <div className='fixed w-full h-[100px] flex justify-between items-center px-20 bg-[#0a192f] text-gray-300'>
+    <div className='fixed z-40 w-full h-[100px] flex justify-between items-center px-20 bg-[#0a192f] text-gray-300'>
         <div className='cursor-pointer'>
             <Link href="/" >
                 <Image src={Logo} alt='Logo Image' style={{ width: '150px', height:'150px' }} />
