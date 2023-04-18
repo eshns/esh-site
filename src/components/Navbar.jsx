@@ -27,9 +27,9 @@ export const Navbar = () => {
                 </InternalLink>
             </li>
             <li className='hover:underline hover:duration-500'>
-                <InternalLink to="about" smooth={true} duration={500}>
+                <Link href={"/about"}>
                     About
-                </InternalLink>
+                </Link>
             </li>
             <li className='hover:underline hover:duration-500'>
                 <InternalLink to="skills" smooth={true} duration={500}>
