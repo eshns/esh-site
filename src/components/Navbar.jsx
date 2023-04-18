@@ -37,9 +37,9 @@ export const Navbar = () => {
                 </Link>
             </li>
             <li className='hover:underline hover:duration-500'>
-                <InternalLink to="work" smooth={true} duration={500}>
+                <Link href={"/work"}>
                     Work
-                </InternalLink>
+                </Link>
             </li>
             <li className='hover:underline hover:duration-500'>
                 <InternalLink to="contact" smooth={true} duration={500}>

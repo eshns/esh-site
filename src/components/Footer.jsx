@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className='flex flex-col justify-center items-center'>
             <span>
               © <span id="year">{currentYear.getFullYear()} </span> 
-              <Link href="/">Emmanuel Santiago. </Link> 
+              <Link href="/">Emmanuel Hernandez. </Link> 
               All rights reserved.
             </span>
         </div>
