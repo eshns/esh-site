@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import Logo from '../assets/logo.png';
-import Link from 'next/link'
+import Link from 'next/link';
 import Image from 'next/image';
 import {Link as InternalLink} from 'react-scroll' 
 
@@ -14,17 +14,17 @@ export const Navbar = () => {
   return (
     <div className='fixed w-full h-[100px] flex justify-between items-center px-20 bg-[#0a192f] text-gray-300'>
         <div className='cursor-pointer'>
-            <InternalLink to="home" smooth={true} duration={500}>
+            <Link href="/" >
                 <Image src={Logo} alt='Logo Image' style={{ width: '150px', height:'150px' }} />
-            </InternalLink>
+            </Link>
         </div>
         
         {/* menu */}
         <ul className='hidden md:flex'>
             <li className='hover:underline hover:duration-500'>
-                <InternalLink to="home" smooth={true} duration={500}>
+                <Link href="/">
                     Home
-                </InternalLink>
+                </Link>
             </li>
             <li className='hover:underline hover:duration-500'>
                 <Link href={"/about"}>
